@@ -1,0 +1,80 @@
+.parent {
+  display: flex;
+  height: 100vh;
+}
+
+.child {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+/* Color the left with gradient */
+.child:nth-child(1) {
+  background: url('/public/images/og-gradient.png') center/cover no-repeat;
+}
+
+/* Color the right half white */
+.child:nth-child(2) {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.demo-img {
+  background: url('/public/images/og-demo.png') center/contain no-repeat;
+  width: 80%;
+  height: 80%;
+}
+
+/* Style for the welcome box */
+.welcome-box {
+  background-color: #FFC0CB;
+  color:#F5F0EA;
+  padding: 20px;
+  border-radius: 10px; /* Optional: Adds rounded corners */
+  text-align: center;
+  width: 80%;
+}
+
+.welcome-text {
+  margin: 50px;
+}
+
+p {
+  margin-bottom: 60px;
+}
+
+.btn {
+  background-color: #F5F0EA;
+  border: none;
+  color: #4D4966;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+
+}
+
+/* Media query for iPad and smaller */
+@media only screen and (max-width: 1024px) {
+  .child {
+    flex: 1;
+  }
+
+  /* Display only the blue on iPad and smaller */
+  .child:nth-child(1) {
+    flex: 2;
+  }
+
+  .child:nth-child(2) {
+    display: none; /* Hide on iPad and smaller */
+  }
+}

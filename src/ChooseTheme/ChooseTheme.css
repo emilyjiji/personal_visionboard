@@ -1,0 +1,39 @@
+.parent {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+.child {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+
+}
+
+.theme-box {
+    background-color: #FFC0CB;
+    color: #F5F0EA;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.theme-text {
+    /* Add your theme box content styling here */
+}
+
+.demo-img {
+    background: url('/public/images/og-demo.png') center/contain no-repeat;
+    width: 80%;
+    /* Adjusted to 100% to fit the container */
+    height: 80%;
+    /* Adjusted to 100% to fit the container */
+}
