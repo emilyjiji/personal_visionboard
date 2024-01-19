@@ -1,28 +1,61 @@
-import React from "react";
-import "./ChooseTheme.css";
+import React, { useState } from "react";
+import "./ChooseTheme.css"; // Import the CSS file
+
+const themes = [
+    "berry",
+    "fall",
+    "forest",
+    "grainy",
+    "ocean",
+    "psycho",
+    "solar",
+    "star",
+    "starburst",
+];
 
 function ChooseTheme() {
+    const [selectedTheme, setSelectedTheme] = useState(null);
+
+    const handleThemeSelection = (theme) => {
+        setSelectedTheme(theme);
+        console.log(theme);
+    };
+
     return (
         <div className='parent'>
             <div>
                 <h1>Choose a Theme</h1>
                 <div className='theme-box'>
                     <div className='theme-text'>
-                        <div className='circle circle1'></div>
-                        <div className='circle circle2'></div>
-                        <div className='circle circle3'></div>
-                        <div className='circle circle4'></div>
-                        <div className='circle circle5'></div>
+                        {themes.map((theme, index) => (
+                            <div
+                                key={index}
+                                className={`circle circle${index + 1}`}
+                                onClick={() => handleThemeSelection(theme)}
+                            ></div>
+                        ))}
                     </div>
                     <button className='btn'>Continue</button>
                 </div>
             </div>
             <div className='child'>
-                
-                {/* <div className="gradient-img">
-                <div className='demo-img'></div>
-                </div> */}
-               
+                {selectedTheme && (
+                    <div
+                        className='theme-container'
+                        style={{
+background: `url('/Themes/${selectedTheme}-theme.png') center/cover no-repeat)`
+                            // background: `url('public/Themes/${selectedTheme}-theme.png') center/cover no-repeat`,
+                        }}
+                    >
+                        <div
+                            className='gradient-img'
+                            style={{
+                                background: `url('/Gradient/${selectedTheme}-gradient.png') center/cover no-repeat`,
+                            }}
+                        ></div>
+                    </div>
+                    // <div>hi </div>
+                )}
             </div>
         </div>
     );

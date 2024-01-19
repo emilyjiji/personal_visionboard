@@ -8,10 +8,10 @@ import ChooseTheme from '../ChooseTheme/ChooseTheme';
 function App() {
   return (
    <div>
-        <Welcome />
+        {/* <Welcome /> */}
         {/* <Started1 /> */}
         {/* <Started2 /> */}
-        {/* <ChooseTheme /> */}
+        <ChooseTheme />
    </div>
   );
 }
