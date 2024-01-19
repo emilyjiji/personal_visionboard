@@ -1,0 +1,110 @@
+/* download.css */
+
+.parent {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .child {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  
+  .download-box {
+    background-color: #FFC0CB;
+    color: #F5F0EA;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+  }
+
+  .demo-img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 10px;
+  }  
+
+  .download-text {
+    margin-bottom: 0px;
+  }
+  
+  .download-text h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+  
+  .download-text p {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .download-text select,
+  .download-text input {
+    margin-top: 10px;
+    margin-bottom: 20px; /* Add margin-bottom for spacing */
+    padding: 10px;
+    width: 80%;
+    box-sizing: border-box;
+    font-size: 1rem;
+    border: 1px solid #F5F0EA;
+    border-radius: 5px;
+  }
+  
+  .download-text input {
+    margin-top: 10px;
+    width: 80%;
+  }
+  
+  .download-text button.btn {
+    margin-top: 10px; /* Add margin-top for spacing */
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #F5F0EA; /* Green color for the button */
+    color: #4D4966;
+    cursor: pointer;
+  }
+  
+  .download-text button.btn:hover {
+    background-color: #4D4966; 
+    color: #F5F0EA;
+  }
+
+
+  /* Media query for medium or larger screens */
+@media only screen and (min-width: 768px) {
+    .download-box {
+      width: 60%; /* Adjust the width for medium or larger screens */
+    }
+  
+    .download-text select,
+    .download-text input {
+      width: 60%; /* Adjust the width for medium or larger screens */
+    }
+  
+    .download-text input {
+      width: 60%; /* Adjust the width for medium or larger screens */
+    }
+  }
+
+  /* Media query for larger screens */
+@media only screen and (min-width: 1024px) {
+    .download-box {
+      width: 40%; /* Adjust the width for larger screens */
+    }
+  
+    .download-text select,
+    .download-text input {
+      width: 50%; /* Adjust the width for larger screens */
+    }
+  
+    .download-text input {
+      width: 50%; /* Adjust the width for larger screens */
+    }
+  }
