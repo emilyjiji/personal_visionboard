@@ -1,80 +1,124 @@
-.parent {
-  display: flex;
-  height: 100vh;
+body {
+  margin: 0;
+  /* overflow: hidden; */
 }
 
-.child {
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.parent {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
 }
 
-/* Color the left with gradient */
-.child:nth-child(1) {
-  background: url('/public/images/og-gradient.png') center/cover no-repeat;
-}
+/* .child:nth-child(1) {
+  flex: 1;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+} */
 
-/* Color the right half white */
-.child:nth-child(2) {
-  background-color: white;
+/* .child:nth-child(2) {
+  flex: 1;
+  background-color: red; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}  */
+
+.page {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.demo-img {
-  background: url('/public/images/og-demo.png') center/contain no-repeat;
-  width: 80%;
-  height: 80%;
+.left-half {
+  flex: 1;
+  background: url('/public/images/og-gradient.png') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
 }
 
-/* Style for the welcome box */
+.right-half {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+  /* height: 100%; */
+}
+
+.demo-img {
+  background: url('/public/images/og-demo.png') center/cover no-repeat;
+  width: 50%;
+  max-height: 100vh;
+}
+
 .welcome-box {
   background-color: #FFC0CB;
-  color:#F5F0EA;
+  color: #F5F0EA;
   padding: 20px;
-  border-radius: 10px; /* Optional: Adds rounded corners */
+  border-radius: 10px;
   text-align: center;
   width: 80%;
 }
 
 .welcome-text {
-  margin: 50px;
+  margin-bottom: 20px;
 }
 
-p {
-  margin-bottom: 60px;
+.welcome-text h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.welcome-text p {
+  margin-bottom: 40px;
+  font-size: 1.2rem;
 }
 
 .btn {
-  background-color: #F5F0EA;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1rem;
   border: none;
-  color: #4D4966;
-  padding: 8px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.5rem;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 10px;
-
+  border-radius: 5px;
 }
 
-/* Media query for iPad and smaller */
-@media only screen and (max-width: 1024px) {
-  .child {
-    flex: 1;
-  }
+.btn:hover {
+  cursor: pointer;
+  color:#F5F0EA;
+  background-color: #4D4966;
+}
 
-  /* Display only the blue on iPad and smaller */
-  .child:nth-child(1) {
+
+
+@media screen and (max-width: 1024px) {
+    
+  .left-half {
     flex: 2;
   }
-
-  .child:nth-child(2) {
+  
+  .right-half {
     display: none; /* Hide on iPad and smaller */
   }
+  
 }
+
+
+
+
