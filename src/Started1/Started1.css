@@ -3,6 +3,7 @@
 .parent {
     display: flex;
     height: 100vh;
+    background: url('/public/images/og-gradient.png') center/cover no-repeat;
   }
   
   .child {

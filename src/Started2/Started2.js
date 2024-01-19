@@ -25,7 +25,7 @@ function Started2() {
 
     return (
         <div className='parent'>
-        <div className='child'>
+        <div className=''>
           <div className='started2-box'>
             <div className='started2-text'>
                 <h1>Almost Done!</h1>

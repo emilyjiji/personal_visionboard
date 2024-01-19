@@ -10,8 +10,8 @@ function App() {
    <div>
         {/* <Welcome /> */}
         {/* <Started1 /> */}
-        {/* <Started2 /> */}
-        <ChooseTheme />
+        <Started2 />
+        {/* <ChooseTheme /> */}
    </div>
   );
 }
