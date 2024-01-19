@@ -14,7 +14,6 @@ h1 {
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-
 }
 
 .theme-box {
@@ -27,13 +26,79 @@ h1 {
 }
 
 .theme-text {
-    /* Add your theme box content styling here */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .demo-img {
     background: url('/public/images/og-demo.png') center/contain no-repeat;
     width: 80%;
-    /* Adjusted to 100% to fit the container */
-    height: 80%;
-    /* Adjusted to 100% to fit the container */
+    /* Adjust as needed */
+    height: 80vw;
+    /* Adjust height as needed */
+    max-width: 1000px;
+    /* Limit maximum width if needed */
+    margin: auto;
+}
+
+.child {
+    background-color: #FFC0CB;
+} 
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.circle1 {
+    background: radial-gradient(circle, #fff, #a0a0a0);
+}
+
+.circle2 {
+    background: radial-gradient(circle, #fff, #b0b0b0);
+}
+
+.circle3 {
+    background: radial-gradient(circle, #fff, #c0c0c0);
+}
+
+.circle4 {
+    background: radial-gradient(circle, #fff, #d0d0d0);
+}
+
+.circle5 {
+    background: radial-gradient(circle, #fff, #e0e0e0);
+}
+
+.circle6 {
+    background: radial-gradient(circle, #fff, #f0f0f0);
+}
+
+.circle7 {
+    background: radial-gradient(circle, #fff, #ffffff);
+}
+
+.circle8 {
+    background: radial-gradient(circle, #fff, #000000);
+}
+
+.gradient-img {
+    background: url('/public/images/og-gradient.png') center/cover no-repeat;
+    width: 100vw;
+    bottom: 0;
+    background-position: center bottom;
+
+}
+
+.theme-img {
+    width: 90vw;
+}
+
+.theme-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }

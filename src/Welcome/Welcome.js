@@ -1,11 +1,10 @@
-import './Welcome.css';
 import React from 'react';
-
+import './Welcome.css';
 
 function Welcome() {
   return (
-    <div className='parent'>
-      <div className='child'>
+    <div className='page'>
+      <div className='left-half'>
         <div className='welcome-box'>
           <div className='welcome-text'>
             <h1>Welcome!</h1>
@@ -16,7 +15,7 @@ function Welcome() {
           </div>
         </div>
       </div>
-      <div className='child'>
+      <div className='right-half'>
         <div className='demo-img' />
       </div>
     </div>
@@ -24,4 +23,5 @@ function Welcome() {
 }
 
 export default Welcome;
+
 
