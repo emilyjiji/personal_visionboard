@@ -12,7 +12,8 @@ function App() {
         {/* <Welcome /> */}
         {/* <Started1 /> */}
         {/* <Started2 /> */}
-        <ChooseTheme />
+        {/* <ChooseTheme /> */}
+        <Download />
    </div>
   );
 }

@@ -28,7 +28,6 @@ function Download() {
 
     return (
       <div className='parent'>
-        <div className='child'>
           <div className='download-box'>
             <img className='demo-img' src='/images/og-demo.png' alt='generated-wallpaper'/>
             <div className='download-text'>
@@ -36,7 +35,6 @@ function Download() {
               <button className='btn' onClick={handleDownload}>Download</button>
             </div>
           </div>
-        </div>
       </div>
     );
 }

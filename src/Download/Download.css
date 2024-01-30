@@ -3,21 +3,14 @@
 .parent {
     display: flex;
     height: 100vh;
-  }
-  
-  .child {
-    flex: 1;
-    display: flex;
+    align-content: center;
     justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
   }
-
   
   .download-box {
     background-color: #FFC0CB;
     color: #F5F0EA;
-    padding: 20px;
+    padding: 50px;
     border-radius: 10px;
     text-align: center;
     width: 80%;
