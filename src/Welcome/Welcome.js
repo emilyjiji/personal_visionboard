@@ -15,9 +15,10 @@ function Welcome() {
           </div>
         </div>
       </div>
+      
       <div className='right-half'>
-        <div className='demo-img' />
-      </div>
+            <div className="demo-img" style={{height: '50%',  display: 'flex', justifyContent: 'center', alignItems: "center", marginTop: 'auto'}} />
+    </div>
     </div>
   );
 }

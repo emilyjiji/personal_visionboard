@@ -16,23 +16,6 @@ body {
   align-items: center;
 }
 
-/* .child:nth-child(1) {
-  flex: 1;
-  background-color: blue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-} */
-
-/* .child:nth-child(2) {
-  flex: 1;
-  background-color: red; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-}  */
 
 .page {
   flex: 1;
@@ -53,19 +36,18 @@ body {
 
 .right-half {
   flex: 1;
-  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
   width: 50%;
   height: 100vh;
-  /* height: 100%; */
+
 }
 
-.demo-img {
+.the-demo-img {
   background: url('/public/images/og-demo.png') center/cover no-repeat;
-  width: 50%;
-  max-height: 100vh;
+  max-width: 80%;
 }
 
 .welcome-box {
@@ -104,8 +86,6 @@ body {
   color:#F5F0EA;
   background-color: #4D4966;
 }
-
-
 
 @media screen and (max-width: 1024px) {
     
