@@ -17,10 +17,10 @@
   .started1-box {
     background-color: #FFC0CB;
     color: #F5F0EA;
-    padding: 20px;
+    padding: 50px;
     border-radius: 10px;
     text-align: center;
-    width: 80%;
+   
   }
   
   .started1-text {
@@ -90,15 +90,15 @@
   /* Media query for larger screens */
 @media only screen and (min-width: 1024px) {
     .started1-box {
-      width: 40%; /* Adjust the width for larger screens */
+      width: 100%; /* Adjust the width for larger screens */
     }
   
     .started1-text select,
     .started1-text input {
-      width: 50%; /* Adjust the width for larger screens */
+      width: 80%; /* Adjust the width for larger screens */
     }
   
     .started1-text input {
-      width: 50%; /* Adjust the width for larger screens */
+      width: 80%; /* Adjust the width for larger screens */
     }
   }

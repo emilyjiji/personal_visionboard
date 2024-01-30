@@ -9,9 +9,9 @@ import Download from '../Download/Download';
 function App() {
   return (
    <div>
-        <Welcome />
+        {/* <Welcome /> */}
         {/* <Started1 /> */}
-        {/* <Started2 /> */}
+        <Started2 />
         {/* <ChooseTheme /> */}
    </div>
   );
