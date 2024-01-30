@@ -17,7 +17,7 @@ h1 {
 }
 
 .theme-box {
-    background-color: #FFC0CB;
+    background-color: grey;
     color: #F5F0EA;
     padding: 20px;
     border-radius: 10px;
@@ -84,14 +84,6 @@ h1 {
     background: radial-gradient(circle, #fff, #000000);
 }
 
-.gradient-img {
-    background: url('/public/images/og-gradient.png') center/cover no-repeat;
-    width: 100vw;
-    bottom: 0;
-    background-position: center bottom;
-
-}
-
 .theme-img {
     width: 90vw;
 }
@@ -101,4 +93,151 @@ h1 {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.gradient-img-1 {
+    background: url('/public/Gradient/star-gradient.png') center/cover no-repeat;
+    width: 100vw;
+    bottom: 0;
+    background-position: center bottom;
+    height: 100%;
+}
+
+.gradient-img-2 {
+    background: url('/public/Gradient/berry-gradient.png') center/cover no-repeat;
+    width: 100vw;
+    bottom: 0;
+    background-position: center bottom;
+    height: 100%;
+}
+
+.gradient-img-3 {
+    background: url('/public/Gradient/fall-gradient.png') center/cover no-repeat;
+    width: 100vw;
+    bottom: 0;
+    background-position: center bottom;
+    height: 100%;
+}
+
+.gradient-img-4 {
+    background: url('/public/Gradient/forest-gradient.png') center/cover no-repeat;
+    width: 100vw;
+    bottom: 0;
+    background-position: center bottom;
+    height: 100%;
+}
+
+.gradient-img-5 {
+    background: url('/public/Gradient/grainy-gradient.png') center/cover no-repeat;
+    width: 100vw;
+    bottom: 0;
+    background-position: center bottom;
+    height: 100%;
+}
+
+.gradient-img-6 {
+    background: url('/public/Gradient/ocean-gradient.png') center/cover no-repeat;
+    width: 100vw;
+    bottom: 0;
+    background-position: center bottom;
+    height: 100%;
+}
+
+.gradient-img-7 {
+    background: url('/public/Gradient/psycho-gradient.png') center/cover no-repeat;
+    width: 100vw;
+    bottom: 0;
+    background-position: center bottom;
+    height: 100%;
+}
+
+.gradient-img-8 {
+    background: url('/public/Gradient/solar-gradient.png') center/cover no-repeat;
+    width: 100vw;
+    bottom: 0;
+    background-position: center bottom;
+    height: 100%;
+}
+
+.gradient-img-9 {
+    background: url('/public/Gradient/starburst-gradient.png') center/cover no-repeat;
+    width: 100vw;
+    bottom: 0;
+    background-position: center bottom;
+    height: 100%;
+}
+
+.demo-img-1 {
+    background: url('/public/images/og-demo.png') center/cover no-repeat;
+    width: 80%;
+    height: 90%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+
+}
+
+.demo-img-2 {
+    background: url('/public/Themes/berry-theme.png') center/cover no-repeat;
+    width: 80%;
+    height: 90%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+.demo-img-3 {
+    background: url('/public/Themes/fall-theme.png') center/cover no-repeat;
+    width: 80%;
+    height: 90%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+.demo-img-4 {
+    background: url('/public/Themes/forest-theme.png') center/cover no-repeat;
+    width: 80%;
+    height: 90%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+.demo-img-5 {
+    background: url('/public/Themes/grainy-theme.png') center/cover no-repeat;
+    width: 80%;
+    height: 90%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+.demo-img-6 {
+    background: url('/public/Themes/ocean-theme.png') center/cover no-repeat;
+    width: 80%;
+    height: 90%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+.demo-img-7 {
+    background: url('/public/Themes/psycho-theme.png') center/cover no-repeat;
+    width: 80%;
+    height: 90%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+.demo-img-8 {
+    background: url('/public/Themes/solar-theme.png') center/cover no-repeat;
+    width: 80%;
+    height: 90%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+.demo-img-9 {
+    background: url('/public/Themes/starburst-theme.png') center/cover no-repeat;
+    width: 80%;
+    height: 90%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
 }
