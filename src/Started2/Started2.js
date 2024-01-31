@@ -1,5 +1,6 @@
 import './Started2.css';
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 function Started2() {
@@ -13,6 +14,12 @@ function Started2() {
 
     const [selectedQuestion, setSelectedQuestion] = useState('');
     const [answer, setAnswer] = useState('');
+
+    const navigate = useNavigate();
+
+    const handleGetStarted = () => {
+      navigate('/choose-theme');
+    };
 
     const handleQuestionChange = (event) => {
         setSelectedQuestion(event.target.value);
@@ -46,7 +53,7 @@ function Started2() {
                   onChange={handleAnswerChange}
                   placeholder='Enter your answer'
                 />
-                <button className='btn'>Continue</button>
+                <button className='btn' onClick={handleGetStarted}>Continue</button>
                 </div>
               )}
               

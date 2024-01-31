@@ -1,7 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Welcome.css';
 
 function Welcome() {
+  const navigate = useNavigate();
+
+  const handleGetStarted = () => {
+    navigate('/started1');
+  };
+
   return (
     <div className='page'>
       <div className='left-half'>
@@ -11,7 +18,7 @@ function Welcome() {
             <p>
               Build A Personal Visionboard for your desktop background in seconds !
             </p>
-            <button className='btn'>Get Started</button>
+            <button className='btn' onClick={handleGetStarted}>Get Started</button>
           </div>
         </div>
       </div>

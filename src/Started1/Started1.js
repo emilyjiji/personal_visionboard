@@ -1,5 +1,6 @@
 import './Started1.css';
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 function Started1() {
@@ -14,6 +15,12 @@ function Started1() {
     const [selectedQuestion, setSelectedQuestion] = useState('');
     const [answer, setAnswer] = useState('');
 
+    const navigate = useNavigate();
+
+    const handleGetStarted = () => {
+      navigate('/started2');
+    };
+
     const handleQuestionChange = (event) => {
         setSelectedQuestion(event.target.value);
         setAnswer('');
@@ -22,6 +29,8 @@ function Started1() {
     const handleAnswerChange = (event) => {
         setAnswer(event.target.value);
     };
+
+
 
     return (
         <div className='parent'>
@@ -46,7 +55,7 @@ function Started1() {
                   onChange={handleAnswerChange}
                   placeholder='Enter your answer'
                 />
-                <button className='btn'>Continue</button>
+                <button className='btn' onClick={handleGetStarted}>Continue</button>
                 </div>
               )}
               
