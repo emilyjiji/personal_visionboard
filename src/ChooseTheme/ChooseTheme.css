@@ -53,35 +53,65 @@ h1 {
 }
 
 .circle1 {
-    background: radial-gradient(circle, #fff, #a0a0a0);
+    background: url('/public/Gradient/star-gradient.png') center/cover no-repeat;
+    margin-right: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .circle2 {
-    background: radial-gradient(circle, #fff, #b0b0b0);
+    background: url('/public/Gradient/berry-gradient.png') center/cover no-repeat;
+    margin-right: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .circle3 {
-    background: radial-gradient(circle, #fff, #c0c0c0);
+    background: url('/public/Gradient/fall-gradient.png') center/cover no-repeat;
+    margin-right: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .circle4 {
-    background: radial-gradient(circle, #fff, #d0d0d0);
+    background: url('/public/Gradient/forest-gradient.png') center/cover no-repeat;
+    margin-right: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .circle5 {
-    background: radial-gradient(circle, #fff, #e0e0e0);
+    background: #EF9FAB center/cover no-repeat;
+    margin-right: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .circle6 {
-    background: radial-gradient(circle, #fff, #f0f0f0);
+    background: url('/public/Gradient/ocean-gradient.png') center/cover no-repeat;
+    margin-right: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .circle7 {
-    background: radial-gradient(circle, #fff, #ffffff);
+    background: url('/public/Gradient/psycho-gradient.png') center/cover no-repeat;
+    margin-right: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .circle8 {
-    background: radial-gradient(circle, #fff, #000000);
+    background: url('/public/Gradient/solar-gradient.png') center/cover no-repeat;
+    margin-right: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.circle9 {
+    background: url('/public/Gradient/starburst-gradient.png') center/cover no-repeat;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .theme-img {
@@ -168,7 +198,7 @@ h1 {
 }
 
 .demo-img-1 {
-    background: url('/public/images/og-demo.png') center/cover no-repeat;
+    background: url('/public/Themes/star-theme.png') center/cover no-repeat;
     width: 80%;
     height: 90%;
     max-width: 100%;
@@ -240,4 +270,42 @@ h1 {
     max-width: 100%;
     max-height: 100%;
     margin: auto;
+}
+
+#imageContainer {
+    position: relative;
+}
+
+.text-box {
+    position: absolute;
+    font-size: 2.5vw;
+    color: white;
+    padding: 1vw;
+    border-radius: 1vw;
+    transform: translate(-50%, -50%); /* Center the element */
+}
+
+#box1 {
+    top: 28%;
+    left: 28%;
+}
+
+#box2 {
+    top: 34%;
+    left: 56.5%;
+}
+
+#box3 {
+    top: 70%;
+    left: 35%;
+}
+
+#box4 {
+    top: 69%;
+    left: 60%;
+}
+
+#box5 {
+    top: 62%;
+    left: 78%;
 }
