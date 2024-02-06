@@ -7,6 +7,7 @@ function Download() {
 
   // Extract the image link from the location state
   const imageLink = location.state && location.state.imageLink;
+
   const handleDownload = () => {
     // Create a link element
     const downloadLink = document.createElement('a');
@@ -23,7 +24,7 @@ function Download() {
   return (
     <div className='parent'>
       <div className='download-box'>
-        <img className='demo-img' src='/images/og-demo.png' alt='generated-wallpaper' />
+        <img className='demo-img' src={imageLink} alt='generated-wallpaper' />
         <div className='download-text'>
           <p>Try out your new background!</p>
           <button className='btn' onClick={handleDownload}>Download</button>

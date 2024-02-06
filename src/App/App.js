@@ -14,8 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Welcome />} />
         <Route path="/started1" element={<Started1 />} />
-        <Route path="/started2" element={<Started2 />} />
-        <Route path="/choose-theme" element={<ChooseTheme />} />
+        <Route path="/started2/:answer" element={<Started2 />} />
+        <Route path="/choose-theme/:answer/:secondAnswer" element={<ChooseTheme />} />
         <Route path="/download" element={<Download />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

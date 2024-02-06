@@ -5,11 +5,12 @@ import { useNavigate } from 'react-router-dom';
 
 function Started1() {
     const questions = [
-        "What is your favorite color?",
-        "What is your dream vacation destination?",
-        "What is your favorite book?",
-        "What is your go-to comfort food?",
-        "What is your favorite hobby?"
+        "What is your favorite quote?",
+        "What is your personal mission statement?",
+        "What are the three values that guide your decision-making and actions in life?",
+        "Write a sentence to motivate you when you're feeling down.",
+        "What is your 10 year goal?",
+        "What do you want to accomplish in the next few months?"
     ];
 
     const [selectedQuestion, setSelectedQuestion] = useState('');
@@ -18,8 +19,9 @@ function Started1() {
     const navigate = useNavigate();
 
     const handleGetStarted = () => {
-      navigate('/started2');
+      navigate(`/started2/${encodeURIComponent(answer)}`);
     };
+    
 
     const handleQuestionChange = (event) => {
         setSelectedQuestion(event.target.value);

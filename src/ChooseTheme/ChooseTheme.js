@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import html2canvas from "html2canvas"; // Import html2canvas library
 import "./ChooseTheme.css";
 
@@ -16,6 +16,13 @@ const themes = [
 ];
 
 function ChooseTheme() {
+  const { answer, secondAnswer } = useParams();
+
+  // Access 'answer' and 'secondAnswer' as needed in this component
+  console.log('Answer from Started1:', decodeURIComponent(answer));
+  console.log('Answer from Started2:', decodeURIComponent(secondAnswer));
+
+
   const [selectedTheme, setSelectedTheme] = useState(null);
   const [imageLink, setImageLink] = useState(null); // State to hold the image link
   const navigate = useNavigate();
@@ -28,26 +35,22 @@ function ChooseTheme() {
     setSelectedTheme(theme);
     console.log(theme);
   };
-
   const saveImage = () => {
     const container = document.getElementById("imageContainer");
     html2canvas(container).then((canvas) => {
       // Convert canvas to data URL
       const dataUrl = canvas.toDataURL("image/png");
-      // Create a download link
-      const link = document.createElement('a');
-      link.href = dataUrl;
-      link.download = 'saved_image.png';
-
-      // Trigger a click on the link to start the download
-      link.click();
-    //   // Set the image link in the state
-    //   setImageLink(dataUrl);
-
-      // Navigate to the download page
-      navigate("/download");
+  
+      // Navigate to the download page with imageLink and answers as state
+      navigate("/download", {
+        state: {
+          imageLink: dataUrl,
+          answer: decodeURIComponent(answer),
+          secondAnswer: decodeURIComponent(secondAnswer),
+        },
+      });
     });
-  };
+  };  
 
   return (
     <div className="parent" style={{ background: "#F5F0EA" }}>
@@ -78,20 +81,20 @@ function ChooseTheme() {
       >
         {selectedTheme && (
           <>
-            <div id="box1" className="text-box">
-              Start now.
+            <div id="box1" className="text-box1">
+              {decodeURIComponent(answer)}
             </div>
             <div id="box2" className="text-box">
-              Text in Box 2
+             
             </div>
             <div id="box3" className="text-box">
-              Text in Box 3
+              
             </div>
-            <div id="box4" className="text-box">
-              Text in Box 4
+            <div id="box4" className="text-box2">
+            {decodeURIComponent(secondAnswer)}
             </div>
             <div id="box5" className="text-box">
-              Text in Box 5
+            
             </div>
             <div className={`demo-img-${themes.indexOf(selectedTheme) + 1}`} />
           </>

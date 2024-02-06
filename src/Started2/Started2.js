@@ -1,25 +1,27 @@
 import './Started2.css';
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 
 function Started2() {
     const questions = [
-        "What is your favorite color?",
-        "What is your dream vacation destination?",
-        "What is your favorite book?",
-        "What is your go-to comfort food?",
-        "What is your favorite hobby?"
+      "What is your favorite quote?",
+      "What is your personal mission statement?",
+      "What are the three values that guide your decision-making and actions in life?",
+      "Write a sentence to motivate you when you're feeling down.",
+      "What is your 10 year goal?",
+      "What do you want to accomplish in the next few months?"
     ];
 
+    const { answer } = useParams();
     const [selectedQuestion, setSelectedQuestion] = useState('');
-    const [answer, setAnswer] = useState('');
+    const [secondAnswer, setAnswer] = useState('');
 
     const navigate = useNavigate();
 
     const handleGetStarted = () => {
-      navigate('/choose-theme');
-    };
+      navigate(`/choose-theme/${encodeURIComponent(answer)}/${encodeURIComponent(secondAnswer)}`);
+    };    
 
     const handleQuestionChange = (event) => {
         setSelectedQuestion(event.target.value);
@@ -49,7 +51,7 @@ function Started2() {
                 <div>
                 <input
                   type='text'
-                  value={answer}
+                  value={secondAnswer}
                   onChange={handleAnswerChange}
                   placeholder='Enter your answer'
                 />
