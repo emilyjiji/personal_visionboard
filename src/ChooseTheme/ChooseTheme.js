@@ -3,16 +3,12 @@ import { useNavigate, useParams } from "react-router-dom";
 import html2canvas from "html2canvas"; // Import html2canvas library
 import "./ChooseTheme.css";
 
-const themes = [
-  "berry",
-  "fall",
-  "forest",
-  "grainy",
-  "ocean",
-  "psycho",
-  "solar",
-  "star",
+const themes = [ 
   "starburst",
+  "ocean",
+  "japan",
+  "purple",
+  "beach",
 ];
 
 function ChooseTheme() {

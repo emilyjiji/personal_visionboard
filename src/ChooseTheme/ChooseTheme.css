@@ -53,63 +53,37 @@ h1 {
 }
 
 .circle1 {
-    background: url('/public/Gradient/star-gradient.png') center/cover no-repeat;
+    background: url('/public/Gradient/starburst-gradient.png') center/cover no-repeat;
     margin-right: 10px;
     border: 1px solid black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .circle2 {
-    background: url('/public/Gradient/berry-gradient.png') center/cover no-repeat;
-    margin-right: 10px;
-    border: 1px solid black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.circle3 {
-    background: url('/public/Gradient/fall-gradient.png') center/cover no-repeat;
-    margin-right: 10px;
-    border: 1px solid black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.circle4 {
-    background: url('/public/Gradient/forest-gradient.png') center/cover no-repeat;
-    margin-right: 10px;
-    border: 1px solid black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.circle5 {
-    background: #EF9FAB center/cover no-repeat;
-    margin-right: 10px;
-    border: 1px solid black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.circle6 {
     background: url('/public/Gradient/ocean-gradient.png') center/cover no-repeat;
     margin-right: 10px;
     border: 1px solid black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.circle7 {
-    background: url('/public/Gradient/psycho-gradient.png') center/cover no-repeat;
+.circle3 {
+    background: url('/public/Gradient/japan-gradient.png') center/cover no-repeat;
     margin-right: 10px;
     border: 1px solid black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.circle8 {
-    background: url('/public/Gradient/solar-gradient.png') center/cover no-repeat;
+.circle4 {
+    background: url('/public/Gradient/purple-gradient.png') center/cover no-repeat;
     margin-right: 10px;
     border: 1px solid black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.circle9 {
-    background: url('/public/Gradient/starburst-gradient.png') center/cover no-repeat;
+
+.circle5 {
+    background: url('/public/Gradient/beach-gradient.png') center/cover no-repeat;
+    margin-right: 10px;
     border: 1px solid black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -125,71 +99,20 @@ h1 {
     flex-wrap: wrap;
 }
 
+/* Add this CSS rule to set text color for beach theme */
+.gradient-img-5 .text-box1,
+.gradient-img-1 .text-box1 {
+    color: black;
+}
+
+/* Add this CSS rule to set text color for starburst theme */
+.gradient-img-5 .text-box2,
+.gradient-img-1 .text-box2 {
+    color: black;
+}
+
+
 .gradient-img-1 {
-    background: url('/public/Gradient/star-gradient.png') center/cover no-repeat;
-    width: 100vw;
-    bottom: 0;
-    background-position: center bottom;
-    height: 100%;
-}
-
-.gradient-img-2 {
-    background: url('/public/Gradient/berry-gradient.png') center/cover no-repeat;
-    width: 100vw;
-    bottom: 0;
-    background-position: center bottom;
-    height: 100%;
-}
-
-.gradient-img-3 {
-    background: url('/public/Gradient/fall-gradient.png') center/cover no-repeat;
-    width: 100vw;
-    bottom: 0;
-    background-position: center bottom;
-    height: 100%;
-}
-
-.gradient-img-4 {
-    background: url('/public/Gradient/forest-gradient.png') center/cover no-repeat;
-    width: 100vw;
-    bottom: 0;
-    background-position: center bottom;
-    height: 100%;
-}
-
-.gradient-img-5 {
-    background: url('/public/Gradient/grainy-gradient.png') center/cover no-repeat;
-    width: 100vw;
-    bottom: 0;
-    background-position: center bottom;
-    height: 100%;
-}
-
-.gradient-img-6 {
-    background: url('/public/Gradient/ocean-gradient.png') center/cover no-repeat;
-    width: 100vw;
-    bottom: 0;
-    background-position: center bottom;
-    height: 100%;
-}
-
-.gradient-img-7 {
-    background: url('/public/Gradient/psycho-gradient.png') center/cover no-repeat;
-    width: 100vw;
-    bottom: 0;
-    background-position: center bottom;
-    height: 100%;
-}
-
-.gradient-img-8 {
-    background: url('/public/Gradient/solar-gradient.png') center/cover no-repeat;
-    width: 100vw;
-    bottom: 0;
-    background-position: center bottom;
-    height: 100%;
-}
-
-.gradient-img-9 {
     background: url('/public/Gradient/starburst-gradient.png') center/cover no-repeat;
     width: 100vw;
     bottom: 0;
@@ -197,49 +120,49 @@ h1 {
     height: 100%;
 }
 
+.gradient-img-2 {
+    background: url('/public/Gradient/ocean-gradient.png') center/cover no-repeat;
+    width: 100vw;
+    bottom: 0;
+    background-position: center bottom;
+    height: 100%;
+}
+
+.gradient-img-3 {
+    background: url('/public/Gradient/japan-gradient.png') center/cover no-repeat;
+    width: 100vw;
+    bottom: 0;
+    background-position: center bottom;
+    height: 100%;
+    border-top: black 1px solid;
+}
+
+.gradient-img-4 {
+    background: url('/public/Gradient/purple-gradient.png') center/cover no-repeat;
+    width: 100vw;
+    bottom: 0;
+    background-position: center bottom;
+    height: 100%;
+}
+
+.gradient-img-5 {
+    background: url('/public/Gradient/beach-gradient.png') center/cover no-repeat;
+    width: 100vw;
+    bottom: 0;
+    background-position: center bottom;
+    height: 100%;
+}
+
+
 .demo-img-1 {
-    background: url('/public/Themes/star-theme.png') center/cover no-repeat;
+    background: url('/public/Themes/starburst-theme.png') center/cover no-repeat;
     width: 80%;
     height: 90%;
     max-width: 100%;
     max-height: 100%;
     margin: auto;
-
 }
-
 .demo-img-2 {
-    background: url('/public/Themes/berry-theme.png') center/cover no-repeat;
-    width: 80%;
-    height: 90%;
-    max-width: 100%;
-    max-height: 100%;
-    margin: auto;
-}
-.demo-img-3 {
-    background: url('/public/Themes/fall-theme.png') center/cover no-repeat;
-    width: 80%;
-    height: 90%;
-    max-width: 100%;
-    max-height: 100%;
-    margin: auto;
-}
-.demo-img-4 {
-    background: url('/public/Themes/forest-theme.png') center/cover no-repeat;
-    width: 80%;
-    height: 90%;
-    max-width: 100%;
-    max-height: 100%;
-    margin: auto;
-}
-.demo-img-5 {
-    background: url('/public/Themes/grainy-theme.png') center/cover no-repeat;
-    width: 80%;
-    height: 90%;
-    max-width: 100%;
-    max-height: 100%;
-    margin: auto;
-}
-.demo-img-6 {
     background: url('/public/Themes/ocean-theme.png') center/cover no-repeat;
     width: 80%;
     height: 90%;
@@ -247,24 +170,24 @@ h1 {
     max-height: 100%;
     margin: auto;
 }
-.demo-img-7 {
-    background: url('/public/Themes/psycho-theme.png') center/cover no-repeat;
+.demo-img-3 {
+    background: url('/public/Themes/japan-theme.png') center/cover no-repeat;
     width: 80%;
     height: 90%;
     max-width: 100%;
     max-height: 100%;
     margin: auto;
 }
-.demo-img-8 {
-    background: url('/public/Themes/solar-theme.png') center/cover no-repeat;
+.demo-img-4 {
+    background: url('/public/Themes/purple-theme.png') center/cover no-repeat;
     width: 80%;
     height: 90%;
     max-width: 100%;
     max-height: 100%;
     margin: auto;
 }
-.demo-img-9 {
-    background: url('/public/Themes/starburst-theme.png') center/cover no-repeat;
+.demo-img-5 {
+    background: url('/public/Themes/beach-theme.png') center/cover no-repeat;
     width: 80%;
     height: 90%;
     max-width: 100%;
@@ -297,6 +220,8 @@ h1 {
     border-radius: 1vw;
     transform: translate(-50%, -50%); /* Center the element */
 }
+
+
 
 .text-box2 {
     position: absolute;
